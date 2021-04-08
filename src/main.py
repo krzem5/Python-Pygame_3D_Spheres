@@ -67,7 +67,7 @@ while True:
     dt=clock.tick()/1000
     rot+=math.pi*dt*0.5
     for evt in pygame.event.get():
-        if evt.type==pygame.QUIT:pygame.quit;sys.exit()
+        if evt.type==pygame.QUIT:pygame.quit();sys.exit()
         if evt.type==pygame.KEYDOWN:
             if evt.key==pygame.K_ESCAPE:pygame.quit();sys.exit();
         cam.events(evt)
